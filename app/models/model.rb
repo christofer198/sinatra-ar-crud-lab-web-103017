@@ -6,8 +6,10 @@ class Post < ActiveRecord::Base
     @title = title
     @blog = blog
   end
-  def self.create(title, blog)
 
+  def self.create(title, blog)
+    post = Post.new(title, blog)
+    post.save
   end
 
 end
