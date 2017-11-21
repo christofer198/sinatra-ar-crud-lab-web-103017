@@ -33,6 +33,8 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/:id' do
+    upost = Post.find_by(id: params[:id])
+    upost.title =
 
   end
 end
