@@ -17,8 +17,8 @@ class ApplicationController < Sinatra::Base
 
   post '/posts' do
     post = Post.new
-    post.title = params[:title])
-    post.blog = params[:blog])
+    post.title = params[:title]
+    post.blog = params[:blog]
     post.save
 
     redirect "/"
