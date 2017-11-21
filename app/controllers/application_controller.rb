@@ -23,4 +23,5 @@ class ApplicationController < Sinatra::Base
 
     redirect "/"
   end
+  
 end
