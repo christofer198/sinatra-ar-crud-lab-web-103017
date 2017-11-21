@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    new_post = Post.create(name: params[:name],  blog: params[:blog])
+    new_post = Post.create(name: params[:name],  content: params[:content])
     redirect "/"
   end
   #read
@@ -34,7 +34,7 @@ class ApplicationController < Sinatra::Base
 
   patch '/posts/:id' do
     upost = Post.find_by(id: params[:id])
-    upost.update(name: params[:name], blog: params[:blog])
+    upost.update(name: params[:name], content: params[:content])
   end
 
   #delete
