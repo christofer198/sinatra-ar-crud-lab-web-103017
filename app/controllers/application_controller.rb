@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
 
   post '/posts' do
     params[:title]
+    params[:blog]
   end
 
 end
