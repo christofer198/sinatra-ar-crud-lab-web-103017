@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20171121190510) do
 
   create_table "posts", force: :cascade do |t|
-    t.string "name"
-    t.string "content"
+    t.string "title"
+    t.string "blog"
   end
 
 end
