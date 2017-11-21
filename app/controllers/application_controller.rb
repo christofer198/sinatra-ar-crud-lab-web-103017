@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
     @posts = Post.all
     erb :index
   end
-
+  #create
   get '/posts/new' do
     erb :new
   end
@@ -20,9 +20,10 @@ class ApplicationController < Sinatra::Base
     new_post = Post.create(title: params[:title],  blog: params[:blog])
     redirect "/"
   end
-
+  #read
   get '/posts' do
 
   end
-  
+
+  #Update
 end
