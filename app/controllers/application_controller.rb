@@ -16,7 +16,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    Post.create(params[:title], params[:blog])
+    Post.new(params[:title], params[:blog])
   end
 
 end
