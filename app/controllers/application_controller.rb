@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    
+
   end
 
   get '/posts/new' do
@@ -16,7 +16,9 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    params[:title]
+    new_post = Post.new
+    new_post.title = params[:title]
+    new_post.blog = params[:blog]
   end
 
 end
