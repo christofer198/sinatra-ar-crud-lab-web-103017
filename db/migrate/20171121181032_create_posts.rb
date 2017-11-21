@@ -1,8 +1,8 @@
 class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
-      t.text :title
-      t.text :blog
+      t.string :title
+      t.string :blog
     end
   end
 end
