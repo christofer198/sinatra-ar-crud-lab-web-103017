@@ -19,6 +19,7 @@ class ApplicationController < Sinatra::Base
     new_post = Post.new
     new_post.title = params[:title]
     new_post.title
+    new_post.save
   end
 
 end
