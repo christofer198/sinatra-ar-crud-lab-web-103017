@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
   end
   #read
   get '/posts' do
-
+    @posts = Post.all
   end
 
   #Update
