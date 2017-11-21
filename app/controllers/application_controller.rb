@@ -12,10 +12,6 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  get '/posts' do
-
-  end
-
   get '/posts/new' do
     erb :new
   end
@@ -25,4 +21,8 @@ class ApplicationController < Sinatra::Base
     redirect "/"
   end
 
+  get '/posts' do
+
+  end
+  
 end
