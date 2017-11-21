@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
   patch '/posts/:id' do
     upost = Post.find_by(id: params[:id])
     upost.update(name: params[:name], content: params[:content])
-    redirect '/posts/#{params[:id]}'
+    redirect '/posts/:id'
   end
 
   #delete
