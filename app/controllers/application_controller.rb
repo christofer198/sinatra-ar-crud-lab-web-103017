@@ -35,6 +35,10 @@ class ApplicationController < Sinatra::Base
   patch '/posts/:id' do
     upost = Post.find_by(id: params[:id])
     upost.update(title: params[:title], blog: params[:blog])
+  end
+
+  #delete
+  delete '/posts/:id/delete' do
 
   end
 end
