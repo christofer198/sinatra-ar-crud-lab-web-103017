@@ -28,6 +28,7 @@ class ApplicationController < Sinatra::Base
 
   #Update
   get '/posts/:id/edit' do
+    @id = params[:id]
     erb :edit
   end
 end
